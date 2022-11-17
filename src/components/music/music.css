@@ -1,0 +1,29 @@
+.clsGoodVibes {
+    color: #3F414E;
+    font-size: 2.7rem;
+    text-align: center;
+    margin-top: 5.5vh;
+}
+
+.clsPlaylistGoodVibes1,
+.clsPlaylistGoodVibes2 {
+    color: #A1A4B2;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.clsPlaylistGoodVibes2 {
+    margin-bottom: 2vh;
+}
+
+
+.clsPlaceholderDivMusic {
+    min-height: 20vh;
+}
+
+.clsDivAllSongs {
+    margin-top: 5vh;
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}

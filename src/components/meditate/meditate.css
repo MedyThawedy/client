@@ -1,0 +1,69 @@
+.clsPlaylistGoodVibes3 {
+    color: #A1A4B2;
+    text-align: center;
+    margin-top: 3vh;
+    width: 42.5vw;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clsDivFrame {
+    margin-top: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clsArticleFrameSet {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.clsArticleSearchResultMeditations {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.clsSearchMeditationItems {
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20vh;
+    gap: 9px;
+}
+
+.clsMeditationItemsImage {
+    height: 30vh;
+    width: 35vw;
+    border-radius: 10px;
+}
+
+.clsMeditationItems {
+    position: relative;
+}
+
+.pMeditationtems1,
+.pMeditationItems2 {
+
+    color: #4a503d;
+    margin-left: 1px;
+
+}
+
+.pMeditationtems1 {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    color: #ffff;
+    font-weight: 800;
+}
+
+.pMeditationItems2 {
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    color: #ffff;
+    font-weight: 800;
+}

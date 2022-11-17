@@ -1,0 +1,38 @@
+.clsNavMeditationParent {
+    display: grid;
+    /*position: fixed;*/
+    /* bottom: 0; */
+    margin-top: 1.5vh;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background-color: #ffff;
+}
+
+.clsAllNavItem,
+.clsFavoritesNavItem,
+.clsAnxiousNavItem,
+.clsSleepNavItem,
+.clsKidsNavItem {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.clsAllNavItem a>img,
+.clsAnxiousNavItem a>img,
+.clsSleepNavItem a>img,
+.clsKidsNavItem a>img {
+    height: 65px;
+    width: 50px;
+}
+
+.clsFavoritesNavItem a>img {
+    height: 65px;
+    width: 59px;
+}

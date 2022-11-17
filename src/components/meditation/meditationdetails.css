@@ -1,0 +1,124 @@
+.clsStructureMeditationDetails {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 50vh;
+
+}
+
+
+.clsArticleMeditationDetails {
+    margin-bottom: 20vh;
+}
+
+.imgMeditationDetailsHeroSection {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -5vh;
+}
+
+.clsArticleMeditationDetails {
+    grid-template-rows: 25vh 1fr;
+}
+
+.clsArticleDetailsText {
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.clsArticleDetailsTextHeader {
+    font-size: 2rem;
+    color: #3f414e;
+    margin-top: 2vh;
+}
+
+.clsArticleDetailsTextParagraph1 {
+    text-transform: uppercase;
+}
+
+.clsArticleDetailsTextParagraph1,
+.clsArticleDetailsTextParagraph2 {
+    color: #a1a4b2;
+}
+
+.clsDivSongs {
+    margin-top: 3vh;
+}
+
+.clsHeaderPlaylist {
+    color: #3f414e;
+    margin-bottom: 3vh;
+    font-size: 1.6rem;
+    margin-top: 2vh;
+}
+
+.clsArticleMeditationDetailsDivToGrid {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.clsListenings,
+.clsFavorite {
+    color: #a1a4b2;
+}
+
+.clsHeartAndHeadphone {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.clsHeartAndHeadphoneLeft,
+.clsHeartAndHeadphoneRight {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.clsHeroSection {
+    position: relative;
+    display: flex;
+}
+
+.clsHeroSectionIcons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.clsHeroSectionIcons img {
+    position: absolute;
+}
+
+.clsMeditationDetailsDownloadIcon {
+    right: 15px;
+    top: 14px;
+}
+
+.clsMeditationDetailsDownloadIcon:hover {
+    border: 3px solid #e28f83;
+    border-radius: 50%;
+}
+
+.clsMeditationDetailsLikeIcon {
+    right: 80px;
+    top: 14px;
+}
+
+.clsMeditationDetailsLikeIcon:hover {
+    border: 3px solid #e28f83;
+    border-radius: 50%;
+}
+
+.clsMeditationDetailsBackIcon {
+    left: 15px;
+    top: 14px;
+}
+
+.clsMeditationDetailsBackIcon:hover {
+    border: 3px solid #e28f83;
+    border-radius: 50%;
+}
