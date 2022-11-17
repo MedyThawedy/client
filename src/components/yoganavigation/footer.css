@@ -1,0 +1,39 @@
+.clsFooterParent {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 3px 8px 10px 5px #e5e5e5;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    background-color: #ffff;
+}
+
+.clsYogaNavItem,
+.clsMedidateNavItem,
+.clsHomeNavItem,
+.clsMusicNavItem,
+.clsProfileNavItem {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.clsYogaNavItem>img,
+.clsMedidateNavItem>img,
+.clsHomeNavItem>img,
+.clsMusicNavItem>img,
+.clsProfileNavItem>img {
+    height: 59px;
+    width: 50px;
+}
+
+#sizeExceptionIconMedidateException {
+    height: 59px;
+    width: 60px;
+}

@@ -1,0 +1,221 @@
+.clsGreetingHome {
+    color: #4a503d;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+}
+
+.clsWishesHome {
+    color: #A1A4B2;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clsGreentingAndWishesHome {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.clsHomeTop {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.clsHomeTopYogaAndMeditation {
+    display: flex;
+
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 90%; */
+    margin-top: 2vh;
+
+}
+
+.clsRandomYogaImg {
+    border-radius: 10px;
+    height: 30vh;
+    width: 40vw;
+    cursor: pointer;
+}
+
+.clsRandomYogaImg:hover {
+    border: 3px solid #e28f83;
+}
+
+
+.clsDivLeftTopHomeYoga {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #FFECCC;
+}
+
+.clsRandomMeditationImg {
+    border-radius: 10px;
+    height: 30vh;
+    width: 40vw;
+    cursor: pointer;
+}
+
+.clsRandomMeditationImg:hover {
+    border: 3px solid #e28f83;
+}
+
+.clsDivRightTopHomeMeditation {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #FFECCC;
+}
+
+.clsGreentingAndWishesHome {
+    margin-left: 8vw;
+    margin-top: 5vh;
+}
+
+.clsAnchorYoga,
+.clsAnchorMeditation {
+    text-decoration: none;
+}
+
+.clsHomeParagraph1,
+.clsHomeParagraph2 {
+    position: absolute;
+    font-weight: 800;
+}
+
+.clsHomeParagraph1 {
+    margin-top: 13vh;
+    margin-left: 2vw;
+}
+
+.clsHomeParagraph2 {
+    margin-top: 18vh;
+    margin-left: 2vw;
+}
+
+.clsHomeBtnStart1 {
+    position: absolute;
+    height: 5vh;
+    width: 22vw;
+    margin-top: 24vh;
+    margin-left: 17vw;
+    border-radius: 20px;
+    background-color: #faf2da;
+    border: 1px solid #faf2da;
+    color: #4a503d;
+    cursor: pointer;
+}
+
+.clsHomeBtnStart2 {
+    position: absolute;
+    height: 5vh;
+    width: 22vw;
+    margin-top: 24vh;
+    margin-left: 17vw;
+    border-radius: 20px;
+    background-color: #4a503d;
+    border: 1px solid #4a503d;
+    color: #faf2da;
+    cursor: pointer;
+}
+
+.clsHomeBtnStart1:hover,
+.clsHomeBtnStart2:hover {
+    border: 3px solid #e28f83;
+}
+
+.searchArticleHome {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    margin-top: 3.5vh;
+}
+
+.clsSearchField {
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5vh;
+}
+
+article.searchArticleHome>div.clsSearchField>input[type=text] {
+    width: 92%;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.searchicon {
+    height: 23px;
+    width: 23px;
+
+}
+
+article.searchArticleHome>div.clsSearchField>input[type=text]:focus,
+article.searchArticleHome>div.clsSearchField>input[type=text]:focus {
+    outline: none;
+}
+
+.clsArticleRecommendedYoga {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.clsRecommendedFourYogaPrograms {
+    width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clsRecommendedYogaItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 2vh;
+    gap: 5px;
+    text-decoration: none;
+}
+
+.clsRecommendedYogaProgramsLinks {
+    text-decoration: none;
+}
+
+.clsYogaItemsImage {
+
+    border-radius: 10px;
+    height: 14vh;
+    width: 19vw;
+    cursor: pointer;
+}
+
+.clsYogaItemsImage:hover {
+    border: 3px solid #e28f83;
+}
+
+#root>main>structure>article.clsArticleRecommendedYoga>div:nth-child(2)>h2 {
+    margin-top: 2vh;
+}
+
+.pYogaItems1 {
+    color: #4a503d;
+    margin-left: 1px;
+}
+
+.pYogaItems2 {
+    color: #A1A4B2;
+    margin-left: 1px;
+}
+
+article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
+    min-height: 30vh;
+}
+
+#idRecommendMeditation {
+    min-height: 58vh;
+}
+
+/*text-decoration: none;*/
