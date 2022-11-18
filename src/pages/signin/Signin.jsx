@@ -25,7 +25,7 @@ const Signin = () => {
             //https://stackoverflow.com/questions/54790135/whats-the-best-solution-for-storing-a-users-id
             localStorage.setItem('user_id', data.user_id)
             localStorage.setItem('user_name', data.user_name)
-
+            console.log('From sign in page!', data.user_name)
             //  localStorage.setItem('userID', 'value');
             //  const USER_ID = localStorage.getItem('userID');
             console.log('Under Token ', data)

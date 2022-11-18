@@ -16,9 +16,8 @@ const Home = () => {
     //const [strMeditationTitle, setStrMeditationTitle] = useState('');
     //const [strSearchStringYogaTitle, setStrYogaTitle] = useState('');
     const [strRecommended, setStrRecommended] = useState([])
-
-
-
+    const user_name = localStorage.getItem('user_name');
+    const username = user_name
 
     // Api Number 4
     useEffect(
@@ -104,7 +103,7 @@ const Home = () => {
             <div className='clsGreentingAndWishesHome'>
                 <div>{/*Only a placeholder*/}</div>
                 <div>
-                    <h2 className='clsGreetingHome'>Good Morning  </h2>
+                    <h2 className='clsGreetingHome'>Good Morning <span className='clsUserNameToBold'> {username}</span> </h2>
                     <p className='clsWishesHome'>We hope you have a good time</p>
                 </div>
                 <div>{/*Only a placeholder*/}</div>

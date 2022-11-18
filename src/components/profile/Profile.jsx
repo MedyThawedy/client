@@ -20,7 +20,7 @@ const Profile = () => {
 
     const user_id = localStorage.getItem('user_id');
     const user_name = localStorage.getItem('user_name');
-    const username = JSON.parse(user_name)
+    const username = user_name
 
     /*
     useEffect(
@@ -128,9 +128,8 @@ const Profile = () => {
             <div className='clsGreentingAndWishesProfile'>
                 <div>{/*Only a placeholder*/}</div>
                 <div>
-                    <h2 className='clsGreetingProfile'>Profile</h2>
+                    <h2 className='clsGreetingProfile'><span className='clsUserNameToBold'> {username}</span> </h2>
 
-                    <p className='clsWishesProfile'>We hope you have a good time</p>
                 </div>
                 <div>{/*Only a placeholder*/}</div>
             </div>
