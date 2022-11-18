@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from '../header/Header'
 import { useState } from 'react';
-
 import { useEffect } from 'react';
 import parse from 'html-react-parser';
 import './music.css';
@@ -32,7 +31,6 @@ const Music = () => {
                         (item) => {
                             return (
                                 <div>
-
 
                                     <div>{parse(`${item.audio_url}`)} </div>
                                 </div>

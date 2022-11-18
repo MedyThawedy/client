@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.clsHeaderLoginPage {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.clsArticleLogin {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+.clsHeroSectionBuildLoginImg {
+    width: 100vw;
+    position: relative;
+    max-height: 55vh;
+}
+
+.clsParaLoginPage {
+    margin-top: 3vh;
+    color: #A1A4B2;
+    text-align: center;
+}
+
+.clsBtnSignUp {
+    background-color: #E28F83;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 3vh;
+    color: #FAF2DA;
+}
+
+.clsLoginButtom {
+    color: #A1A4B2;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.clsAnchorLoginPage {
+    color: #E28F83;
+    text-decoration: none;
+}
+
+
+
+.clsLogoLogin {
+    margin: 1.5rem 0 1rem;
+    color: #4a503d;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.5rem;
+
+    position: absolute;
+    justify-self: center;
+    z-index: 1;
+
+}

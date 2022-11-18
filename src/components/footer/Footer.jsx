@@ -60,8 +60,10 @@ const Footer = () => {
     return (
         <footer className='clsFooterParent'>
             <div className='clsYogaNavItem'>
-                <img onClick={handleClick}
-                    src={active ? activeyogaicon : yogaicon} alt="" title="yogaicon" />
+                <Link to='/yoga'>
+                    <img onClick={handleClick}
+                        src={active ? activeyogaicon : yogaicon} alt="" title="yogaicon" />
+                </Link>
             </div>
             <div className='clsMedidateNavItem'>
                 <Link to='/meditate'>
@@ -82,7 +84,9 @@ const Footer = () => {
             </div>
 
             <div className='clsProfileNavItem'>
-                <img onClick={handleClick4} src={active4 ? activeprofileicon : profileicon} alt="" title="profileicon" />
+                <Link to='/profile'>
+                    <img onClick={handleClick4} src={active4 ? activeprofileicon : profileicon} alt="" title="profileicon" />
+                </Link>
             </div>
         </footer>
     )

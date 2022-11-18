@@ -11,22 +11,25 @@ import activesleepicon from '../assets/img/activesleepicon.png'
 import activekidsicon from '../assets/img/activekidsicon.png'
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
-import './meditationnavigation.css';
+import './yoganavigation.css';
 
 
-const Meditationnavigation = () => {
+const Yoganavigation = () => {
 
     const [active, setActive] = useState(false);
     const [active1, setActive1] = useState(false);
     const [active2, setActive2] = useState(false);
     const [active3, setActive3] = useState(false);
     const [active4, setActive4] = useState(false);
+
+
     const handleClick = () => {
         setActive(!active);
         setActive1(false);
         setActive2(false);
         setActive3(false);
         setActive4(false);
+
     };
     const handleClick1 = () => {
         setActive(false);
@@ -55,41 +58,42 @@ const Meditationnavigation = () => {
         setActive2(false);
         setActive3(false);
         setActive4(!active4);
+
     };
 
     return (
-        <nav className='clsNavMeditationParent'>
+        <nav className='clsNavYogaParent'>
             <div className='clsAllNavItem'>
-                <Link to='/meditateall'>
+                <Link to='/yogaall'>
                     <img onClick={handleClick}
-                        src={active ? activeallicon : allicon} alt="" title="allicon" />
+                        src={active ? activeallicon : allicon} alt="" />
                 </Link>
             </div>
             <div className='clsFavoritesNavItem'>
-                <Link to='/meditatefavorites'>
+                <Link to='/yogafavorites'>
                     <img onClick={handleClick1}
-                        src={active1 ? activefavoritesicon : favoritesicon} alt="" title="medidateicon" />
+                        src={active1 ? activefavoritesicon : favoritesicon} alt="" />
                 </Link>
             </div>
             <div className='clsAnxiousNavItem'>
-                <Link to='/meditateanxious'>
-                    <img onClick={handleClick2} src={active2 ? activeanxiousicon : anxiousicon} alt="" title="anxiousicon" />
+                <Link to='/yogaanxious'>
+                    <img onClick={handleClick2} src={active2 ? activeanxiousicon : anxiousicon} alt="" />
                 </Link>
             </div>
             <div className='clsSleepNavItem'>
-                <Link to='/meditatesleep'>
+                <Link to='/yogasleep'>
                     <img onClick={handleClick3}
-                        src={active3 ? activesleepicon : sleepicon} alt="" title="Sleepicon" />
+                        src={active3 ? activesleepicon : sleepicon} alt="" />
                 </Link>
             </div>
 
             <div className='clsKidsNavItem'>
-                <Link to='/meditatekids'>
-                    <img onClick={handleClick4} src={active4 ? activekidsicon : kidsicon} alt="" title="profileicon" />
+                <Link to='/yogakids'>
+                    <img onClick={handleClick4} src={active4 ? activekidsicon : kidsicon} alt="" />
                 </Link>
             </div>
         </nav>
     )
 }
 
-export default Meditationnavigation
+export default Yoganavigation

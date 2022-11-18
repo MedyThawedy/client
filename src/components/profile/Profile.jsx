@@ -3,11 +3,11 @@ import Header from '../../components/header/Header'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import './home.css'
+import './profile.css'
 import searchicon from '../../components/assets/img/searchicon.png'
 
 
-const Home = () => {
+const Profile = () => {
     const [oneRandomYoga, setOneRandomYoga] = useState([]);
     const [oneRandomMeditation, setOneRandomMeditation] = useState([]);
     const [recommendedYogas, setRecommendedYogas] = useState([]);
@@ -15,9 +15,35 @@ const Home = () => {
     const [strSearchTitle, setStrSearchTitle] = useState(null);
     //const [strMeditationTitle, setStrMeditationTitle] = useState('');
     //const [strSearchStringYogaTitle, setStrYogaTitle] = useState('');
-    const [strRecommended, setStrRecommended] = useState([])
+    const [strRecommended, setStrRecommended] = useState('Your favorite')
+    const [userdata, setUserdata] = useState({})
+
+    const user_id = localStorage.getItem('user_id');
     const user_name = localStorage.getItem('user_name');
     const username = user_name
+
+    /*
+    useEffect(
+        () => {
+            fetch(`http://localhost:9898/api/finduser?userid=${user_id}`)
+                .then(response => response.json())
+                .then(data => setUserdata(data))
+        },
+        []);*/
+    const url = 'http://localhost:9898/api/finduser?user_id=' + user_id;
+
+    useEffect(
+        () => {
+            fetch(url)
+                .then(response => response.json())
+                .then(data => setUserdata(data))
+            console.log('1 Object ', userdata)
+            console.log("FROM OBen ", user_id)
+            console.log('Username', username)
+        },
+        []);
+
+
 
     // Api Number 4
     useEffect(
@@ -99,52 +125,25 @@ const Home = () => {
     return (
         <structure>
             <Header />
-
-            <div className='clsGreentingAndWishesHome'>
+            <div className='clsGreentingAndWishesProfile'>
                 <div>{/*Only a placeholder*/}</div>
                 <div>
-                    <h2 className='clsGreetingHome'>Good Morning <span className='clsUserNameToBold'> {username}</span> </h2>
-                    <p className='clsWishesHome'>We hope you have a good time</p>
+                    <h2 className='clsGreetingProfile'><span className='clsUserNameToBold'> {username}</span> </h2>
+
                 </div>
                 <div>{/*Only a placeholder*/}</div>
             </div>
-            <article className='clsHomeTop' >
-                <div>{/*Only a placeholder*/}</div>
-                <div className='clsHomeTopYogaAndMeditation'>
 
-                    <div>
-                        <Link className='clsAnchorYoga' key={oneRandomYoga._id} to={`/getyoga/${oneRandomYoga._id}`} >
-                            <div className='clsDivLeftTopHomeYoga'>
-                                {/*<iframe title={oneRandomYoga.title} src={oneRandomYoga.video_url} width="100%" height="100%" frameborder="0" allowfullscreen></iframe>*/}
-                                <p className='clsHomeParagraph1'>{oneRandomYoga.title}</p>
-                                <p className='clsHomeParagraph2'>{oneRandomYoga.level}</p>
-                                <button className='clsHomeBtnStart1' alt="" >START</button>
-                                <img className='clsRandomYogaImg' src={oneRandomYoga.image_url} />
-                            </div>
-                        </Link>
-                    </div>
-                    <div>
-                        <Link className='clsAnchorMeditation' key={oneRandomMeditation._id} to={`/meditationpage/${oneRandomMeditation._id}`}>
-                            <div className='clsDivRightTopHomeMeditation'>
-                                <p className='clsHomeParagraph1'>{oneRandomMeditation.description}</p>
-                                <p className='clsHomeParagraph2'>{oneRandomMeditation.title}</p>
-                                <button className='clsHomeBtnStart2' alt="" >START</button>
-                                <img className='clsRandomMeditationImg' src={oneRandomMeditation.image_url} /></div>
-                        </Link>
-                    </div>
-                </div>
-                <div>{/*Only a placeholder*/}</div>
-            </article>
-            <article className='searchArticleHome'>
+            <article className='searchArticleProfile'>
                 <div></div>
-                <div className='clsSearchField'><input type="text" onChange={(e) => { setStrSearchTitle(e.target.value) }} /><img className='searchicon' src={searchicon} alt="search" /></div>
+                <div className='clsSearchField'><input value={strSearchTitle} type="text" onChange={(e) => { setStrSearchTitle(e.target.value) }} /><img className='searchicon' src={searchicon} alt="search" /></div>
                 <div></div>
             </article>
 
             <article className='clsArticleRecommendedYoga' >
                 <div></div>
                 <div className='clsRecommendedFourYogaPrograms'>
-                    <h2>{strRecommended} Yoga for you</h2>
+                    <h2>{strRecommended} Yoga </h2>
                     <div className='clsRecommendedYogaItems'>
                         {
                             recommendedYogas.map(
@@ -169,7 +168,7 @@ const Home = () => {
             <article id="idRecommendMeditation" className='clsArticleRecommendedYoga'>
                 <div></div>
                 <div className='clsRecommendedFourYogaPrograms'>
-                    <h2>{strRecommended} Meditations for you</h2>
+                    <h2>{strRecommended} Meditations </h2>
                     <div className='clsRecommendedYogaItems'>
                         {
                             recommendedMeditations.map(
@@ -196,4 +195,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Profile

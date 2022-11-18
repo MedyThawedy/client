@@ -1,25 +1,25 @@
-.clsGreetingHome {
+.clsGreetingProfile {
     color: #4a503d;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.5rem;
 }
 
-.clsWishesHome {
+.clsWishesProfile {
     color: #A1A4B2;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.clsGreentingAndWishesHome {
+.clsGreentingAndWishesProfile {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
-.clsHomeTop {
+.clsProfileTop {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
-.clsHomeTopYogaAndMeditation {
+.clsProfileTopYogaAndMeditation {
     display: flex;
 
     gap: 10px;
@@ -42,7 +42,7 @@
 }
 
 
-.clsDivLeftTopHomeYoga {
+.clsDivLeftTopProfileYoga {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -60,14 +60,14 @@
     border: 3px solid #e28f83;
 }
 
-.clsDivRightTopHomeMeditation {
+.clsDivRightTopProfileMeditation {
     display: flex;
     flex-direction: column;
     position: relative;
     color: #FFECCC;
 }
 
-.clsGreentingAndWishesHome {
+.clsGreentingAndWishesProfile {
     margin-left: 8vw;
     margin-top: 5vh;
 }
@@ -77,23 +77,23 @@
     text-decoration: none;
 }
 
-.clsHomeParagraph1,
-.clsHomeParagraph2 {
+.clsProfileParagraph1,
+.clsProfileParagraph2 {
     position: absolute;
     font-weight: 800;
 }
 
-.clsHomeParagraph1 {
+.clsProfileParagraph1 {
     margin-top: 13vh;
     margin-left: 2vw;
 }
 
-.clsHomeParagraph2 {
+.clsProfileParagraph2 {
     margin-top: 18vh;
     margin-left: 2vw;
 }
 
-.clsHomeBtnStart1 {
+.clsProfileBtnStart1 {
     position: absolute;
     height: 5vh;
     width: 22vw;
@@ -106,7 +106,7 @@
     cursor: pointer;
 }
 
-.clsHomeBtnStart2 {
+.clsProfileBtnStart2 {
     position: absolute;
     height: 5vh;
     width: 22vw;
@@ -119,12 +119,12 @@
     cursor: pointer;
 }
 
-.clsHomeBtnStart1:hover,
-.clsHomeBtnStart2:hover {
+.clsProfileBtnStart1:hover,
+.clsProfileBtnStart2:hover {
     border: 3px solid #e28f83;
 }
 
-.searchArticleHome {
+.searchArticleProfile {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
     margin-top: 3.5vh;
@@ -141,7 +141,7 @@
     height: 5vh;
 }
 
-article.searchArticleHome>div.clsSearchField>input[type=text] {
+article.searchArticleProfile>div.clsSearchField>input[type=text] {
     width: 92%;
     border: none;
     border-radius: 20px;
@@ -156,8 +156,8 @@ article.searchArticleHome>div.clsSearchField>input[type=text] {
     margin-right: 1.5vw;
 }
 
-article.searchArticleHome>div.clsSearchField>input[type=text]:focus,
-article.searchArticleHome>div.clsSearchField>input[type=text]:focus {
+article.searchArticleProfile>div.clsSearchField>input[type=text]:focus,
+article.searchArticleProfile>div.clsSearchField>input[type=text]:focus {
     outline: none;
 }
 
@@ -218,10 +218,13 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
     min-height: 58vh;
 }
 
-.clsWishesHome {
+
+.clsWishesProfile {
     margin-top: 2vh;
-    margin-bottom: 2vh;
 }
 
+.clsUserNameToBold {
+    font-weight: 800;
+}
 
 /*text-decoration: none;*/
