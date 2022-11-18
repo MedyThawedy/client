@@ -68,7 +68,7 @@ const MeditationDetails = () => {
                 <div>
                     <div className='clsArticleDetailsText'>
                         <h3 className='clsArticleDetailsTextHeader'>{meditationDetails.title}</h3>
-                        <p className='clsArticleDetailsTextParagraph1'>{meditationDetails.category}</p>
+                        <p className='clsArticleDetailsTextParagraph1'>{meditationDetails.level}</p>
                         <p className='clsArticleDetailsTextParagraph2'>{meditationDetails.text}</p>
                     </div>
                     <div className='clsHeartAndHeadphone'>

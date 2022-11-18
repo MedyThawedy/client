@@ -20,12 +20,12 @@
     grid-template-columns: 10px 1fr 10px;
 }
 
-.clsArticleSearchResultMeditations {
+.clsArticleSearchResultYogas {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
 
-.clsSearchMeditationItems {
+.clsSearchYogaItems {
     margin-top: 2vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -34,25 +34,22 @@
     gap: 9px;
 }
 
-.clsMeditationItemsImage {
+.clsYogaItemsImageInYogaComponent {
     height: 30vh;
     width: 35vw;
     border-radius: 10px;
-}
-
-.clsMeditationItems {
     position: relative;
 }
 
-.pMeditationtems1,
-.pMeditationItems2 {
-
-    color: #4a503d;
-    margin-left: 1px;
-
+.clsYogaItemsYogaPage {
+    position: relative;
 }
 
-.pMeditationtems1 {
+.clsYogaItems {
+    position: relative;
+}
+
+.pYogaItemsYogaPageFromYoga1 {
     position: absolute;
     top: 150px;
     left: 10px;
@@ -60,7 +57,25 @@
     font-weight: 800;
 }
 
-.pMeditationItems2 {
+.pYogaItemsYogaPageFromYoga2 {
+
+    position: absolute;
+    top: 170px;
+    left: 10px;
+    color: #ffff;
+    font-weight: 800;
+
+}
+
+.pYogatems1 {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    color: #ffff;
+    font-weight: 800;
+}
+
+.pYogaItemsYogaPage2 {
     position: absolute;
     top: 170px;
     left: 10px;
@@ -68,14 +83,14 @@
     font-weight: 800;
 }
 
-.clsCtructurMeditate {
+.clsCtructurYoga {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 
 }
 
 
-.searchArticleMeditate {
+.searchArticleYoga {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
     margin-top: 3.5vh;
@@ -92,7 +107,7 @@
     height: 5vh;
 }
 
-article.searchArticleMeditate>div.clsSearchField>input[type=text] {
+article.searchArticleYoga>div.clsSearchField>input[type=text] {
     width: 92%;
     border: none;
     border-radius: 20px;
@@ -107,13 +122,13 @@ article.searchArticleMeditate>div.clsSearchField>input[type=text] {
 
 }
 
-article.searchArticleMeditate>div.clsSearchField>input[type=text]:focus,
-article.searchArticleMeditate>div.clsSearchField>input[type=text]:focus {
+article.searchArticleYoga>div.clsSearchField>input[type=text]:focus,
+article.searchArticleYoga>div.clsSearchField>input[type=text]:focus {
     outline: none;
 }
 
 @media screen and (max-width: 600px) {
-    .clsIframMeditateSong {
+    .clsIframYogaSong {
 
         width: 87%;
     }

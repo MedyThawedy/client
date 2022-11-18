@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './meditate.css'
 
-const Meditate = () => {
+const MeditateAll = () => {
 
 
     const [meditations, setMeditations] = useState([]);
@@ -15,8 +15,6 @@ const Meditate = () => {
     //const [strMeditationTitle, setStrMeditationTitle] = useState('');
     //const [strSearchStringYogaTitle, setStrYogaTitle] = useState('');
     const [strRecommended, setStrRecommended] = useState('Recommended')
-
-
 
     useEffect(
         () => {
@@ -103,7 +101,6 @@ const Meditate = () => {
                                             <Link key={item._id} className="clsRecommendedYogaProgramsLinks" to={`/meditationpage/${item._id}`}>
                                                 <div className='clsMeditationItems'>
                                                     <img className='clsMeditationItemsImage' src={item.image_url} alt={item.title} />
-
                                                     <p className='pMeditationtems1'>{item.title}</p>
                                                     <p className='pMeditationItems2'>{item.category} </p>
                                                 </div>
@@ -124,4 +121,4 @@ const Meditate = () => {
 }
 
 
-export default Meditate
+export default MeditateAll

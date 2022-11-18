@@ -1,17 +1,15 @@
-.clsStructureMeditationDetails {
+.clsStructureYogaDetails {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 50vh;
-
 }
 
-.searchArticleMeditate {}
 
-.clsArticleMeditationDetails {
+.clsArticleYogaDetails {
     margin-bottom: 20vh;
 }
 
-.imgMeditationDetailsHeroSection {
+.imgYogaDetailsHeroSection {
     width: 100%;
     height: 100%;
     border-bottom-left-radius: 20px;
@@ -19,7 +17,7 @@
     margin-top: -5vh;
 }
 
-.clsArticleMeditationDetails {
+.clsArticleYogaDetails {
     grid-template-rows: 25vh 1fr;
 }
 
@@ -56,7 +54,7 @@
     margin-top: 2vh;
 }
 
-.clsArticleMeditationDetailsDivToGrid {
+.clsArticleYogaDetailsDivToGrid {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
 }
@@ -69,6 +67,7 @@
 .clsHeartAndHeadphone {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 2vh;
 }
 
 .clsHeartAndHeadphoneLeft,
@@ -87,39 +86,65 @@
 
 .clsHeroSectionIcons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .clsHeroSectionIcons img {
     position: absolute;
 }
 
-.clsMeditationDetailsDownloadIcon {
+.clsYogaDetailsDownloadIcon {
     right: 15px;
     top: 14px;
+    cursor: pointer;
 }
 
-.clsMeditationDetailsDownloadIcon:hover {
+.clsYogaDetailsDownloadIcon:hover {
     border: 3px solid #e28f83;
     border-radius: 50%;
 }
 
-.clsMeditationDetailsLikeIcon {
+.clsYogaDetailsLikeIcon {
     right: 80px;
     top: 14px;
+    cursor: pointer;
 }
 
-.clsMeditationDetailsLikeIcon:hover {
+.clsYogaDetailsLikeIcon:hover {
     border: 3px solid #e28f83;
     border-radius: 50%;
 }
 
-.clsMeditationDetailsBackIcon {
+.clsYogaDetailsBackIcon {
     left: 15px;
     top: 14px;
+    cursor: pointer;
 }
 
-.clsMeditationDetailsBackIcon:hover {
+.clsYogaDetailsBackIcon:hover {
     border: 3px solid #e28f83;
     border-radius: 50%;
+}
+
+.clsYogaDetailsPlayIcon {
+
+    left: 249px;
+    top: 108px;
+    width: 12.5vw;
+    cursor: pointer;
+    position: absolute;
+}
+
+.clsYogaDetailsPlayIcon:hover {
+    border: 3px solid #e28f83;
+    border-radius: 50%;
+    border: 3px solid #e28f83;
+}
+
+.clsYogaDetailsPlayIconHeroSection {
+    left: 249px;
+    top: 108px;
+    width: 12.5vw;
+    cursor: pointer;
+    position: absolute;
 }

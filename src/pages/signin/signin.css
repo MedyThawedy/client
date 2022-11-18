@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.clsInputSignUp {
+    margin-top: 10vh;
+}
+
+.clsHeaderSigninPage {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.clsArticleSignin {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.clsHeroSectionBuildSigninImg {
+    width: 100vw;
+}
+
+.clsParaSigninPage {
+    margin-top: 3vh;
+    color: #A1A4B2;
+    text-align: center;
+}
+
+.clsBtnSignUp {
+    background-color: #E28F83;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 3vh;
+    color: #FAF2DA;
+    cursor: pointer;
+}
+
+.clsInputSignUp,
+.clsPasswordSignUp {
+    border: 1px solid #E28F83;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 52px;
+    border-radius: 20px;
+    margin-top: 3vh;
+    height: 55px;
+    outline: none;
+    /* color: #FAF2DA;*/
+}
+
+.clsSigninButtom {
+    color: #A1A4B2;
+    margin-top: 3vh;
+    text-align: center;
+
+}
+
+.clsAnchorSigninPage {
+    color: #E28F83;
+    text-decoration: none;
+}
