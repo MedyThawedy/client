@@ -18,7 +18,7 @@ const Yogafavorites = () => {
 
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/findyogacategory?stryogacategory=Favorites')
+            fetch('http://localhost:9898/api/findyogacategory?stryogacategory=Favourites')
                 .then(response => response.json())
                 .then(data => setYogas(data))
         },

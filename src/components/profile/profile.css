@@ -1,7 +1,8 @@
 .clsGreetingProfile {
     color: #4a503d;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.5rem;
+    ;
+    font-size: 1.8rem;
 }
 
 .clsWishesProfile {
@@ -35,6 +36,7 @@
     height: 30vh;
     width: 40vw;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .clsRandomYogaImg:hover {
@@ -54,6 +56,7 @@
     height: 30vh;
     width: 40vw;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .clsRandomMeditationImg:hover {
@@ -126,7 +129,7 @@
 
 .searchArticleProfile {
     display: grid;
-    grid-template-columns: 10px 1fr 10px;
+    grid-template-columns: 20px 1fr 20px;
     margin-top: 3.5vh;
 }
 
@@ -174,7 +177,7 @@ article.searchArticleProfile>div.clsSearchField>input[type=text]:focus {
 
 .clsRecommendedYogaItems {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-top: 2vh;
     gap: 5px;
     text-decoration: none;
@@ -185,11 +188,12 @@ article.searchArticleProfile>div.clsSearchField>input[type=text]:focus {
 }
 
 .clsYogaItemsImage {
-
+    object-fit: cover;
     border-radius: 10px;
     height: 14vh;
-    width: 19vw;
+    width: 100%;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .clsYogaItemsImage:hover {
@@ -215,7 +219,7 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
 }
 
 #idRecommendMeditation {
-    min-height: 58vh;
+    min-height: 47vh;
 }
 
 
@@ -225,6 +229,56 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
 
 .clsUserNameToBold {
     font-weight: 800;
+}
+
+.clsProfilePicture {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+
+.clsProfileNameAndImage {
+
+    display: flex;
+    /* justify-items: baseline; */
+    align-items: center;
+    gap: 3vw;
+}
+
+.clsProfilePicture {}
+
+.clsArticleAppointments {
+    display: grid;
+    grid-template-columns: 10px 1fr 10px;
+    height: 50vh;
+    margin-left: 8vw;
+    margin-bottom: 10vh;
+}
+
+.reminderItemsInProfile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1vh;
+    grid-gap: 3px;
+    justify-items: center;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+}
+
+.clsAppointmentsItems>h2 {
+    margin-bottom: 2vh;
+}
+
+.clsAppointmentsItems {
+    width: 90%;
+}
+
+.reminderItemLeft,
+.reminderItemRight {
+    width: 30vw;
+    padding: 10px;
+
 }
 
 /*text-decoration: none;*/

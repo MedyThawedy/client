@@ -7,12 +7,13 @@
 .clsHeaderSigninPage {
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
 
 .clsArticleSignin {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 170px;
 }
 
 .clsHeroSectionBuildSigninImg {
@@ -40,26 +41,44 @@
     font-size: 1.1rem;
 }
 
-.clsImgSignUp {
-    background-color: #E28F83;
+.clsBtnSignUp:hover {
+    background-color: #e28f83f2;
+    font-weight: 600;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #E28F83;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
     height: 55px;
     border-radius: 20px;
-    border: none;
     margin-top: 3vh;
-    color: #FAF2DA;
     cursor: pointer;
     font-size: 1.1rem;
     font-size: 2em;
-    font-weight: 700;
     color: white;
     display: inline-block;
-    padding: 0.5rem;
+    padding: 1rem;
     cursor: pointer;
+    color: #686a73;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.clsUploadIcon {
+    width: 32px;
+    height: 32px;
 }
 
 .clsInputSignUp,
@@ -81,13 +100,11 @@
     color: #A1A4B2;
     margin-top: 3vh;
     text-align: center;
-
 }
 
 .clsAnchorSigninPage {
     color: #E28F83;
     text-decoration: none;
-
 }
 
 .clsAnchorSigninPage:hover {
@@ -102,4 +119,6 @@
 
 .clsHeaderSigninPage {
     margin-bottom: 3vh;
+    font-size: 2rem;
+    color: #4A503D;
 }

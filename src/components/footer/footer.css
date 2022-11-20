@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+    object-fit: cover;
 }
 
 
@@ -31,9 +32,12 @@
 .clsProfileNavItem>img {
     height: 59px;
     width: 50px;
+    object-fit: cover;
+
 }
 
+/*
 #sizeExceptionIconMedidateException {
     height: 59px;
     width: 60px;
-}
+}*/

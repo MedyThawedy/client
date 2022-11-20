@@ -214,14 +214,16 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
     min-height: 30vh;
 }
 
-#idRecommendMeditation {
+#idRecommendMeditationHomeComponent {
     min-height: 58vh;
+    margin-bottom: 13vh;
 }
 
 .clsWishesHome {
     margin-top: 2vh;
     margin-bottom: 2vh;
 }
+
 
 
 /*text-decoration: none;*/

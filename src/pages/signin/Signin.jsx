@@ -9,9 +9,11 @@ const Signin = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [errorMessage, setErrorMessage] = useState('');
     const nav = useNavigate()
 
     const login = async () => {
+
         const result = await fetch('http://localhost:9898/api/login', {
             method: 'POST',
             headers: {
@@ -29,20 +31,30 @@ const Signin = () => {
             //  localStorage.setItem('userID', 'value');
             //  const USER_ID = localStorage.getItem('userID');
             console.log('Under Token ', data)
-            nav('/home')
+            nav('/reminder')
+        } else {
+            const response = await result.json()
+            setErrorMessage(response.message)
+            console.log(response)
+
+            setTimeout(() => {
+                setErrorMessage('');
+            }, 2000);
+
         }
     }
 
     return (
 
-        <article className='clsArticleSignin'>
+        <article className='clsArticleSignin' >
             <div>
                 <h2 className='clsHeaderSigninPage'>Welcome Back!</h2>
             </div>
-            <input onChange={(e) => { setEmail(e.target.value) }} type="email" className='clsInputSignUp' placeholder='EMAIL' />
+            <input onChange={(e) => { setEmail(e.target.value) }} type="email" className='clsInputSignUp' placeholder='EMAIL' id="idArticleSigninInput" />
             <input onChange={(e) => { setPassword(e.target.value) }} className='clsPasswordSignUp' type="password" placeholder='PASSWORD' />
+            {errorMessage && (<p className="clsErrorMsg"> {errorMessage} </p>)}
             <button className='clsBtnSignUp' onClick={login}>Login</button>
-            <p className='clsSigninButtom'>DON’T HAVE AN ACCOUNT YET?<Link to='/signup' className='clsAnchorSigninPage'> Sign Up </Link></p>
+            <p className='clsSigninButtom'>DON’T HAVE AN ACCOUNT YET?<Link to='/signup' className='clsAnchorSigninPage'> SIGN UP </Link></p>
         </article>
 
     )

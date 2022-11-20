@@ -1,0 +1,223 @@
+.react-ios-time-picker {
+    margin-bottom: 47vh;
+    visibility: visible;
+}
+
+.react-ios-time-picker-main {
+    display: flex;
+    justify-content: center;
+    margin-top: 3vh;
+}
+
+.react-ios-time-picker-input {
+    text-align: center;
+    border: 1px solid #fff;
+}
+
+.react-ios-time-picker-btn-container {
+    background-color: #F5F5F9;
+}
+
+.react-ios-time-picker-container {
+    background-color: #F5F5F9;
+}
+
+.react-ios-time-picker-btn {
+    color: #263238;
+    font-size: 1.3rem;
+}
+
+.react-ios-time-picker-btn-cancel {
+    color: #263238;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.react-ios-time-picker-cell-inner-hidden {
+    visibility: true;
+}
+
+.react-ios-time-picker-container {
+    width: 95vw;
+}
+
+.react-ios-time-picker-input {
+    font-family: 'Roboto', sans-serif;
+    width: 300px;
+    height: 57px;
+    font-size: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+    width: 40vw;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #E28F83;
+    color: #FAF2DA;
+}
+
+.react-ios-time-picker-input:hover {
+    border: 2px solid #E28F83;
+    color: #263238;
+    background-color: #fff;
+
+}
+
+.react-ios-time-picker-selected-overlay {
+    background-color: #E28F83;
+}
+
+.clsDivMainTimePicker {}
+
+.react-ios-time-picker-btn-container {
+    border-bottom: 0.5px solid lightgrey;
+}
+
+.react-ios-time-picker-cell-inner-hour:hover,
+.react-ios-time-picker-cell-inner-minute:hover,
+.react-ios-time-picker-cell-inner-hour-format:hover {
+    background-color: lightgrey;
+}
+
+.clsReminderQuestion,
+.clsWhatTheyRecommend {
+    margin-left: 3vw;
+
+}
+
+.clsReminderQuestion {
+    margin-top: 3.2vh;
+    width: 62vw;
+}
+
+.clsWhatTheyRecommend {
+    margin-top: 3vh;
+    width: 68vw;
+}
+
+.clsReminderQuestion2 {
+    margin-top: 2.5vh;
+    color: #4a503d;
+    width: 62vw;
+}
+
+
+.clsReminderQuestion2,
+.clsWhatTheyRecommend2 {
+    margin-left: 3vw;
+}
+
+.clsWhatTheyRecommend2 {
+    margin-top: 3vh;
+    color: #A1A4B2;
+    width: 68vw;
+}
+
+
+
+.reminderDays {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 50vw;
+    margin-top: 5vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5px;
+}
+
+.reminderDays div {
+    /* background-color: #8E9775;*/
+    /* color: #FAF2DA;*/
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    text-align: center;
+    padding: 11px;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+}
+
+.reminderDays div:hover {
+    background-color: #FAF2DA;
+    color: #4A503D;
+    border: 1px solid grey;
+}
+
+.react-ios-time-picker-cell-inner-hour-format,
+.react-ios-time-picker-cell-inner-minute,
+.react-ios-time-picker-cell-inner-hour {
+    font-size: 1.3rem;
+}
+
+.clsBtnReminderSave {
+    background-color: #E28F83;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 55px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 3vh;
+    color: #FAF2DA;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+
+.clsBtnReminderSave:hover {
+    background-color: #FFF;
+    color: #E28F83;
+    font-weight: 600;
+    border: 1px solid #E28F83;
+    ;
+}
+
+.clsReminderNoThanks {
+    color: #E28F83;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clsReminderNoThanks:hover {
+    font-weight: 600;
+}
+
+
+.clsBottomReminder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+    margin-top: 2vh;
+}
+
+.clsReminderMsg {
+    text-align: center;
+    margin-top: 25px;
+    /* color: #E28F83;*/
+    font-size: 1.2rem;
+    margin-top: 27px;
+    margin-bottom: -19px;
+    /* text-underline-position: under; */
+    font-weight: 800;
+    color: #4a503d;
+}
+
+.thursday,
+.sunday {
+    padding: 9px !important;
+}
+
+.reminderItems {
+    display: flex;
+}

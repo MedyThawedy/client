@@ -22,7 +22,7 @@
 
 .clsArticleSearchResultMeditations {
     display: grid;
-    grid-template-columns: 10px 1fr 10px;
+    grid-template-columns: 25px 1fr 25px;
 }
 
 .clsSearchMeditationItems {
@@ -36,8 +36,9 @@
 
 .clsMeditationItemsImage {
     height: 30vh;
-    width: 35vw;
+    width: 37vw;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .clsMeditationItems {
@@ -78,7 +79,7 @@
 .searchArticleMeditate {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
-    margin-top: 3.5vh;
+    margin-top: 1.5vh;
 }
 
 .clsSearchField {

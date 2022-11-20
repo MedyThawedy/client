@@ -22,7 +22,7 @@ const Login = () => {
                 <p className='clsParaLoginPage' >Thousand of people are using silent moon
                     for meditation and yoga classes.</p>
             </div>
-            <button className='clsBtnSignUp' onClick={navToSignup}>SIGN UP</button>
+            <button className='clsBtnSignUp' onClick={navToSignup} >SIGN UP</button>
             <p className='clsLoginButtom'>ALREADY HAVE AN ACCOUNT?<Link to='/signin' className='clsAnchorLoginPage'> LOG IN </Link></p>
         </article>
 

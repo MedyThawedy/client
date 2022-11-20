@@ -6,6 +6,8 @@ import './signup.css'
 import { useNavigate } from 'react-router-dom'
 import backicon from '../../components/assets/img/backicon.png'
 import { useEffect } from 'react'
+import uploadicon from '../../components/assets/img/uploadicon.png'
+
 
 const Signup = () => {
 
@@ -15,6 +17,9 @@ const Signup = () => {
     const [password, setPassword] = useState('')
     const [file, setFile] = useState(null)
     const [base64, setBase64] = useState('')
+    const [errorMessage1, setErrorMessage1] = useState('');
+    const [errorMessage2, setErrorMessage2] = useState('');
+
     const nav = useNavigate()
 
     useEffect(() => {
@@ -31,6 +36,7 @@ const Signup = () => {
     }
 
     const createuser = async () => {
+
         const user = {
             name: name,
             surname: surname,
@@ -58,6 +64,8 @@ const Signup = () => {
         //console.log(data);
 
         if (response.status === 200) {
+            setErrorMessage1(false)
+            setErrorMessage2(false)
             const data = await response.json()
             localStorage.setItem('token', data.token)
             //https://stackoverflow.com/questions/54790135/whats-the-best-solution-for-storing-a-users-id
@@ -71,10 +79,20 @@ const Signup = () => {
             setPassword('')
             setBase64('')
             //nav('/home')
-
             login(user.email, user.password)
+        } else {
+            const res = await response.json()
+            setErrorMessage1(res.message1)
+            setErrorMessage2(res.message2)
+            console.log(res)
+            setTimeout(() => {
+                setErrorMessage1('');
+                setErrorMessage2('');
+            }, 2000);
+            setTimeout(() => {
+                setErrorMessage1('');
+            }, 3000);
         }
-
     }
 
 
@@ -95,7 +113,7 @@ const Signup = () => {
             //  localStorage.setItem('userID', 'value');
             //  const USER_ID = localStorage.getItem('userID');
             console.log('Under Token ', data)
-            nav('/home')
+            nav('/welcome')
         }
     }
 
@@ -108,8 +126,13 @@ const Signup = () => {
             <input value={name} onChange={(e) => { setName(e.target.value) }} type="text" className='clsInputSignUp' placeholder='NAME' />
             <input value={surname} onChange={(e) => { setSurname(e.target.value) }} type="text" className='clsInputSignUp' placeholder='SURNAME' />
             <input value={email} onChange={(e) => { setEmail(e.target.value) }} type="email" className='clsInputSignUp' placeholder='EMAIL' />
+            {errorMessage1 && (<p className="clsErrorMsg"> {errorMessage1} </p>)}
             <input value={password} onChange={(e) => { setPassword(e.target.value) }} className='clsPasswordSignUp' type="password" placeholder='PASSWORD' />
-            {/* <input onChange={(e) => setFile(e.target.files[0])} type="file" className='clsImgSignUp' />*/}
+            {errorMessage2 && (<p className="clsErrorMsg"> {errorMessage2} </p>)}
+            <label class="custom-file-upload">
+                <input type="file" onChange={(e) => setFile(e.target.files[0])} className='clsImgSignUp' />
+                <img className='clsUploadIcon' src={uploadicon} alt="" />    UPLOAD A PICTURE!
+            </label>
             <button className='clsBtnSignUp' onClick={createuser}>REGISTER</button>
             <p className='clsSigninButtom'>ALREADY HAVE AN ACCOUNT?<Link to='/signin' className='clsAnchorSigninPage'> GO BACK TO LOGIN</Link></p>
         </article>

@@ -1,0 +1,76 @@
+.clsAddYoga {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-template-rows: 279px;
+}
+
+
+.mainDivAddYoga {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    margin-top: 3vh;
+}
+
+.mainDivAddYoga>div input[type=text] {
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 100%;
+    height: 2.7vh;
+}
+
+.clsStructureAddYoga {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 5vw;
+    margin-top: 3vh;
+}
+
+.btnSaveDataInAddYoga {
+    background-color: #E28F83;
+    color: #fff;
+    width: 93px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    height: 15px;
+    border-radius: 6px;
+    margin-top: 1vh;
+    height: 34px;
+
+
+}
+
+.btnAddYoga {
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+}
+
+#idAddMusicMainYoga {
+    grid-template-rows: 30px;
+}
+
+#btnAddMusic {
+    margin-top: -100px;
+}
+
+.clsAdminNavigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: auto;
+
+    margin-bottom: 3vh;
+}
+
+.clsAdminNavigation a {
+    text-decoration: none;
+    color: #E28F83;
+
+}
+
+.clsAdminNavigation a:hover {
+    font-weight: 900;
+
+}
