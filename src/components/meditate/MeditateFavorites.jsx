@@ -18,7 +18,7 @@ const MeditateFavorites = () => {
 
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/findmeditation?searchmeditationstring=')
+            fetch('http://localhost:9898/api/findmeditationcategory?strmeditationcategory=Favourites')
                 .then(response => response.json())
                 .then(data => setMeditations(data))
         },

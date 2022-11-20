@@ -166,7 +166,7 @@ const Home = () => {
 
             </article>
 
-            <article id="idRecommendMeditation" className='clsArticleRecommendedYoga'>
+            <article id="idRecommendMeditationHomeComponent" className='clsArticleRecommendedYoga'>
                 <div></div>
                 <div className='clsRecommendedFourYogaPrograms'>
                     <h2>{strRecommended} Meditations for you</h2>

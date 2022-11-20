@@ -24,19 +24,29 @@ import Signin from './pages/signin/Signin'
 import Guard from './pages/signin/Guard';
 import Signup from './pages/signup/Signup'
 import Profile from './components/profile/Profile';
+import Welcome from './pages/welcome/Welcome';
+import Reminder from './components/reminder/Reminder';
+import AddYoga from './components/contentadministration/AddYoga';
+import YogaPrograms from './components/contentadministration/YogaPrograms';
+import MeditationPrograms from './components/contentadministration/MeditationPrograms';
+import MusicAdministration from './components/contentadministration/MusicAdministration';
+
 
 function App() {
+  const [showNav, setShowNav] = useState(true);
   return (
     <main >
 
       <BrowserRouter>
-        {/* <Navigation handleSearchValue={(e) => e.target.value} /> */}
+
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route element={<Guard />}>
+            <Route path="/welcome" element={<Welcome />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/reminder" element={<Reminder />} />
             <Route path="/music" element={<Music />} />
             <Route path="/meditate" element={<Meditate />} />
             <Route path="/meditateall" element={<MeditateAll />} />
@@ -53,6 +63,12 @@ function App() {
             <Route path="/getyoga/:yogaid" element={<YogaDetails />} />
             <Route path="/meditationpage/:meditationid" element={<MeditationDetails />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/welcome" element={<Welcome />}></Route>
+            <Route path="/reminder" element={<Reminder />}></Route>
+            <Route path='/addyoga' element={<AddYoga />} />
+            <Route path='/getyogaprograms' element={<YogaPrograms />} />
+            <Route path='/getmeditationprograms' element={<MeditationPrograms />} />
+            <Route path='/getallmusic' element={<MusicAdministration />} />
           </Route>
         </Routes>
         <Footer />

@@ -65,24 +65,24 @@ const Yoganavigation = () => {
         <nav className='clsNavYogaParent'>
             <div className='clsAllNavItem'>
                 <Link to='/yogaall'>
-                    <img onClick={handleClick}
+                    <img className='clsNavFooterItemImg' onClick={handleClick}
                         src={active ? activeallicon : allicon} alt="" />
                 </Link>
             </div>
             <div className='clsFavoritesNavItem'>
                 <Link to='/yogafavorites'>
-                    <img onClick={handleClick1}
+                    <img className='clsNavFooterItemImg' onClick={handleClick1}
                         src={active1 ? activefavoritesicon : favoritesicon} alt="" />
                 </Link>
             </div>
             <div className='clsAnxiousNavItem'>
                 <Link to='/yogaanxious'>
-                    <img onClick={handleClick2} src={active2 ? activeanxiousicon : anxiousicon} alt="" />
+                    <img className='clsNavFooterItemImg' onClick={handleClick2} src={active2 ? activeanxiousicon : anxiousicon} alt="" />
                 </Link>
             </div>
             <div className='clsSleepNavItem'>
                 <Link to='/yogasleep'>
-                    <img onClick={handleClick3}
+                    <img className='clsNavFooterItemImg' onClick={handleClick3}
                         src={active3 ? activesleepicon : sleepicon} alt="" />
                 </Link>
             </div>

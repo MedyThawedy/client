@@ -2,7 +2,7 @@
     color: #A1A4B2;
     text-align: center;
     margin-top: 3vh;
-    width: 42.5vw;
+    width: 71.5vw;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -22,7 +22,7 @@
 
 .clsArticleSearchResultYogas {
     display: grid;
-    grid-template-columns: 10px 1fr 10px;
+    grid-template-columns: 25px 1fr 25px;
 }
 
 .clsSearchYogaItems {
@@ -36,9 +36,10 @@
 
 .clsYogaItemsImageInYogaComponent {
     height: 30vh;
-    width: 35vw;
+    width: 37vw;
     border-radius: 10px;
     position: relative;
+    object-fit: cover;
 }
 
 .clsYogaItemsYogaPage {
@@ -93,7 +94,7 @@
 .searchArticleYoga {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
-    margin-top: 3.5vh;
+    margin-top: 1.5vh;
 }
 
 .clsSearchField {

@@ -7,7 +7,8 @@
     left: 0;
     max-width: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     background-color: #ffff;
 }
 
@@ -28,13 +29,17 @@
 .clsAnxiousNavItem a>img,
 .clsSleepNavItem a>img,
 .clsKidsNavItem a>img {
-    height: 65px;
+    height: 70px;
     width: 50px;
 }
 
 .clsFavoritesNavItem a>img {
-    height: 65px;
+    height: 70px;
     width: 59px;
+}
+
+.clsNavFooterItemImg {
+    object-fit: cover;
 }
 
 /*
