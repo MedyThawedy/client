@@ -27,7 +27,7 @@ const Yogaanxious = () => {
 
 
     // Api Number 9
-    const urlToSearchYoga = `http://localhost:9898/api/findyoga?searchyogastring=${strSearchTitle}`;
+    const urlToSearchYoga = `http://localhost:9898/api/findyoga?stryoga=${strSearchTitle}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {
