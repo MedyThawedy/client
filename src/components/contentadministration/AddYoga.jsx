@@ -30,7 +30,7 @@ const AddYoga = () => {
             audio_url: audioUrl
         }
 
-        const response = await fetch('http://localhost:9898/api/addmusic', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/addmusic`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -66,7 +66,7 @@ const AddYoga = () => {
             image_url: image_url
         }
 
-        const response = await fetch('http://localhost:9898/api/addyoga', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/addyoga`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json' //,
@@ -106,7 +106,7 @@ const AddYoga = () => {
             text: textM
         }
 
-        const response = await fetch('http://localhost:9898/api/addmeditation', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/addmeditation`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json' //,

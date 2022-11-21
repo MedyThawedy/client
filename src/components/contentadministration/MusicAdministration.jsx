@@ -12,7 +12,7 @@ const Music = () => {
     const [songs, setSongs] = useState([]);
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/getallmusic')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/getallmusic`)
                 .then(response => response.json())
                 .then(data => setSongs(data))
         }, [])

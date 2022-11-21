@@ -121,7 +121,7 @@ const Reminder = () => {
             time: value
         }
 
-        const response = await fetch('http://localhost:9898/api/saveappointment', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/saveappointment`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

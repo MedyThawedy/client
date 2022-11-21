@@ -21,7 +21,7 @@ const MeditationDetails = () => {
     let { meditationid } = useParams();
 
     // Api Number 11
-    const url = `http://localhost:9898/api/getmeditation/${meditationid}`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/api/getmeditation/${meditationid}`;
     console.log('meditationid from meditation details', meditationid)
     useEffect(() => {
         fetchDetails();
@@ -36,7 +36,7 @@ const MeditationDetails = () => {
 
 
     // Api Number 11
-    const urlsongs = `http://localhost:9898/api/meditationmusic/${meditationid}`;
+    const urlsongs = `${process.env.REACT_APP_BACKEND_URL}/api/meditationmusic/${meditationid}`;
     useEffect(() => {
         fetchPlaylist();
     }, []);

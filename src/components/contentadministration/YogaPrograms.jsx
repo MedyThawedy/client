@@ -24,7 +24,7 @@ const YogaPrograms = () => {
     let { yogaid } = useParams();
 
     // Api Number 11
-    const url = `http://localhost:9898/api/getallyoga`;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/api/getallyoga`;
     console.log('yogaid from yoga details', yogaid)
     useEffect(() => {
         fetchDetails();
