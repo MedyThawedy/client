@@ -6,7 +6,7 @@ const Guard = () => {
 
     useEffect(() => {
         const checktoken = async () => {
-            const response = await fetch('http://localhost:9898/api/verify', {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/verify`, {
                 // user_id zugriff
                 headers: {
                     Authentication: 'Bearer ' + localStorage.getItem('token')

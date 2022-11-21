@@ -45,7 +45,7 @@ const Signup = () => {
             picture: base64
         }
 
-        const response = await fetch('http://localhost:9898/api/registration', {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/registration`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -97,7 +97,7 @@ const Signup = () => {
 
 
     const login = async (email, password) => {
-        const result = await fetch('http://localhost:9898/api/login', {
+        const result = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/login`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

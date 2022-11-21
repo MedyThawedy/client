@@ -35,7 +35,7 @@ const Profile = () => {
                 .then(data => setUserdata(data))
         },
         []);*/
-    const url = 'http://localhost:9898/api/finduser?user_id=' + user_id;
+    const url = `${process.env.REACT_APP_BACKEND_URL}/api/finduser?user_id=` + user_id;
 
     useEffect(
         () => {
@@ -61,7 +61,7 @@ const Profile = () => {
     // Api Number 4
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/getrandomyoga')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/getrandomyoga`)
                 .then(response => response.json())
                 .then(data => setOneRandomYoga(data))
         },
@@ -70,7 +70,7 @@ const Profile = () => {
     // Api Number 8
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/getrandommeditation')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/getrandommeditation`)
                 .then(response => response.json())
                 .then(data => setOneRandomMeditation(data))
         },
@@ -80,7 +80,7 @@ const Profile = () => {
     useEffect(
         () => {
             // http://localhost:9898/api/findyogacategory?stryogacategory=Favorites
-            fetch('http://localhost:9898/api/recommendedyoga')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/recommendedyoga`)
                 .then(response => response.json())
                 .then(data => setRecommendedYogas(data))
         },
@@ -90,14 +90,14 @@ const Profile = () => {
     // APi Number 10
     useEffect(
         () => { //http://localhost:9898/api/findmeditationcategory?strmeditationcategory=Favorites
-            fetch('http://localhost:9898/api/recommendedmeditation ')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/recommendedmeditation`)
                 .then(response => response.json())
                 .then(data => setRecommendedMeditations(data))
         },
         []);
 
     // Api Number 5
-    const urlToSearchYoga = `http://localhost:9898/api/findyoga?stryoga=${strSearchTitle}`;
+    const urlToSearchYoga = `${process.env.REACT_APP_BACKEND_URL}/api/findyoga?stryoga=${strSearchTitle}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {
@@ -116,7 +116,7 @@ const Profile = () => {
     };
 
     // Api Number 9
-    const urlToSearchMeditation = `http://localhost:9898/api/findmeditation?searchmeditationstring=${strSearchTitle}`;
+    const urlToSearchMeditation = `${process.env.REACT_APP_BACKEND_URL}/api/findmeditation?searchmeditationstring=${strSearchTitle}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {
@@ -138,7 +138,7 @@ const Profile = () => {
     useEffect(
         () => {
             // http://localhost:9898/api/findyogacategory?stryogacategory=Favorites
-            fetch('http://localhost:9898/api/getreminder')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/getreminder`)
                 .then(response => response.json())
                 .then(data => setReminder(data))
         },

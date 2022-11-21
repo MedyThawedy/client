@@ -18,7 +18,7 @@ const Yogaanxious = () => {
 
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/findyogacategory?stryogacategory=Anxious')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/findyogacategory?stryogacategory=Anxious`)
                 .then(response => response.json())
                 .then(data => setYogas(data))
         },
@@ -27,7 +27,7 @@ const Yogaanxious = () => {
 
 
     // Api Number 9
-    const urlToSearchYoga = `http://localhost:9898/api/findyoga?searchyogastring=${strSearchTitle}`;
+    const urlToSearchYoga = `${process.env.REACT_APP_BACKEND_URL}/api/findyoga?stryoga=${strSearchTitle}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {
@@ -49,7 +49,7 @@ const Yogaanxious = () => {
     // Apui Number 28
     //  http://localhost:9898/api/findmeditationcategory?strmeditationcategory=Relax
     // Api Number 9
-    const urlToSearchYogaWithCategory = `http://localhost:9898/api/findyoga?searchyogastring=${strSearchCategory}`;
+    const urlToSearchYogaWithCategory = `${process.env.REACT_APP_BACKEND_URL}/api/findyoga?searchyogastring=${strSearchCategory}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {

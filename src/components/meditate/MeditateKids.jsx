@@ -18,7 +18,7 @@ const MeditateKids = () => {
 
     useEffect(
         () => {
-            fetch('http://localhost:9898/api/findmeditationcategory?strmeditationcategory=Kids')
+            fetch(`${process.env.REACT_APP_BACKEND_URL}/api/findmeditationcategory?strmeditationcategory=Kids`)
                 .then(response => response.json())
                 .then(data => setMeditations(data))
         },
@@ -27,7 +27,7 @@ const MeditateKids = () => {
 
 
     // Api Number 9
-    const urlToSearchMeditation = `http://localhost:9898/api/findmeditation?searchmeditationstring=${strSearchTitle}`;
+    const urlToSearchMeditation = `${process.env.REACT_APP_BACKEND_URL}/api/findmeditation?searchmeditationstring=${strSearchTitle}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {
@@ -49,7 +49,7 @@ const MeditateKids = () => {
     // Apui Number 28
     //  http://localhost:9898/api/findmeditationcategory?strmeditationcategory=Relax
     // Api Number 9
-    const urlToSearchMeditationWithCategory = `http://localhost:9898/api/findmeditation?searchmeditationstring=${strSearchCategory}`;
+    const urlToSearchMeditationWithCategory = `${process.env.REACT_APP_BACKEND_URL}/api/findmeditation?searchmeditationstring=${strSearchCategory}`;
     useEffect(() => {
         // To separte this search useEffect from the recommendations
         if (strSearchTitle) {
