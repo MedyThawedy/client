@@ -128,9 +128,29 @@ article.searchArticleYoga>div.clsSearchField>input[type=text]:focus {
     outline: none;
 }
 
+.clsYogaItemsImageInYogaComponent:hover{
+    border: 3px solid #e28f83;
+}
+
 @media screen and (max-width: 600px) {
     .clsIframYogaSong {
 
         width: 87%;
+    }
+}
+
+
+@media only screen and (min-width: 912px) {
+    .clsYogaItemsImageInYogaComponent {
+        width: 100%;
+    }
+    .clsCtructurYogaDivContent{
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clsPlaylistGoodVibes3 {
+    width:20.5vw;
     }
 }

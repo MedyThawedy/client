@@ -30,15 +30,16 @@ import AddYoga from './components/contentadministration/AddYoga';
 import YogaPrograms from './components/contentadministration/YogaPrograms';
 import MeditationPrograms from './components/contentadministration/MeditationPrograms';
 import MusicAdministration from './components/contentadministration/MusicAdministration';
-
+import AppContext from './AppContext';
+import { useContext } from 'react';
 
 function App() {
-  const [showNav, setShowNav] = useState(true);
+  const [showNav, setShowNav] = useState(false);
   return (
     <main >
 
       <BrowserRouter>
-
+<AppContext.Provider value={{showNav, setShowNav}}>
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/signin" element={<Signin />} />
@@ -71,7 +72,10 @@ function App() {
             <Route path='/getallmusic' element={<MusicAdministration />} />
           </Route>
         </Routes>
-        <Footer />
+   { showNav &&    <Footer />} 
+   </AppContext.Provider>
+
+
       </BrowserRouter>
     </main>
   );

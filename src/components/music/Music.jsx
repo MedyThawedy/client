@@ -6,8 +6,13 @@ import parse from 'html-react-parser';
 import './music.css';
 import heart from '../assets/img/hearticon.png'
 import headphone from '../assets/img/headphoneicon.png'
+import AppContext from '../../AppContext'
+import { useContext } from 'react'
+
 
 const Music = () => {
+    const context = useContext(AppContext);
+    context.setShowNav(true);
     const [songs, setSongs] = useState([]);
     useEffect(
         () => {

@@ -227,3 +227,88 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
 
 
 /*text-decoration: none;*/
+
+@media only screen and (min-width: 912px) {
+
+    #root > main {
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clsRandomMeditationImg {
+        border-radius: 10px;
+        height: 30vh;
+        width: 100%;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .clsRandomYogaImg {
+        border-radius: 10px;
+        height: 30vh;
+        width: 100%;
+        cursor: pointer;
+        object-fit: cover;
+    }
+
+    .clsHomeBtnStart1 {
+        position: absolute;
+        height: 5vh;
+        width: 90px;
+        margin-top: 24vh;
+        margin-left: 50px;
+        border-radius: 20px;
+        background-color: #faf2da;
+        border: 1px solid #faf2da;
+        color: #4a503d;
+        cursor: pointer;
+    }
+
+    .clsHomeBtnStart2 {
+        position: absolute;
+        height: 5vh;
+        width: 90px;
+        margin-top: 24vh;
+        margin-left: 50px;
+        border-radius: 20px;
+        background-color: #4a503d;
+        border: 1px solid #4a503d;
+        color: #faf2da;
+        cursor: pointer;
+    }
+
+    .clsRecommendedFourYogaPrograms {
+        width: 83%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clsRandomYogaImg, .clsRandomMeditationImg {
+        
+        width: 100% !important;
+       
+    }
+
+    .clsGreentingAndWishesHome {
+        margin-left: 35px;
+        margin-top: 5vh;
+    }
+
+    .clsRandomYogaImg, .clsRandomMeditationImg {
+    width:12vw;
+    }
+
+    .clsHomeParagraph1, .clsHomeParagraph2 {
+    margin-left:1vw;
+    }
+
+    .clsHomeTopYogaAndMeditation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .clsHomeTop {
+        display: grid;
+        grid-template-columns: 43px 1fr 43px;
+    }
+}

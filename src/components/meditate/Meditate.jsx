@@ -5,9 +5,13 @@ import searchicon from '../assets/img/searchicon.png'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './meditate.css'
+import AppContext from '../../AppContext'
+import { useContext } from 'react'
+
 
 const Meditate = () => {
-
+    const context = useContext(AppContext);
+    context.setShowNav(true);
 
     const [meditations, setMeditations] = useState([]);
     const [strSearchTitle, setStrSearchTitle] = useState(null);
@@ -73,7 +77,7 @@ const Meditate = () => {
     return (
         <structure className="clsCtructurMeditate">
             <div> {/**/}</div>
-            <div>
+            <div className='clsCtructurMeditateDivContent'>
                 <Header />
                 <h2 className='clsGoodVibes'>Meditate</h2>
                 <p className='clsPlaylistGoodVibes3'>Audio-only meditation techniques to help you minimize your screen time and practice on the go.</p>

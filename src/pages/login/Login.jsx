@@ -3,9 +3,14 @@ import { Link } from 'react-router-dom'
 import union from '../../components/assets/img/union.png'
 import './login.css'
 import { useNavigate } from 'react-router-dom'
+import AppContext from '../../AppContext';
+import { useContext } from 'react';
 
 const Login = () => {
     const nav = useNavigate()
+
+    const context = useContext(AppContext);
+    context.setShowNav(false);
 
     const navToSignup = () => {
         nav('/signup')

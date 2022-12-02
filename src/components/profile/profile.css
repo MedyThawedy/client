@@ -144,6 +144,10 @@
     height: 5vh;
 }
 
+.clsSearchField:hover {
+    border: 2px solid #e28f83;
+}
+
 article.searchArticleProfile>div.clsSearchField>input[type=text] {
     width: 92%;
     border: none;
@@ -253,6 +257,7 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
     height: 50vh;
     margin-left: 8vw;
     margin-bottom: 10vh;
+    margin-top: 2vh;
 }
 
 .reminderItemsInProfile {
@@ -282,3 +287,24 @@ article:nth-child(6)>div.clsRecommendedFourYogaPrograms>div {
 }
 
 /*text-decoration: none;*/
+
+@media only screen and (min-width: 912px) {
+    .clsArticleAppointments {
+    margin-left: 2vw;
+    }
+    .reminderItemsInProfile {
+        display: flex;
+        max-width: 340px;
+    }
+    .clsGreentingAndWishesProfile {
+        margin-left: 3vw;
+    }
+    .clsProfileNameAndImage {
+        gap: 1vw;
+    }  
+    .clsAppointmentsItems>h2 {
+        margin-bottom: 2vh;
+        margin-top: 2vh;
+        margin-left: 3px;
+    }  
+}

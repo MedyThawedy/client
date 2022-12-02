@@ -6,9 +6,13 @@ import { Link } from 'react-router-dom'
 import './profile.css'
 import searchicon from '../../components/assets/img/searchicon.png'
 import profilepicture from '../../components/assets/img/profilepicture.png'
+import AppContext from '../../AppContext';
+import { useContext } from 'react';
 
 
 const Profile = () => {
+    const context = useContext(AppContext);
+    context.setShowNav(true);
     const [oneRandomYoga, setOneRandomYoga] = useState([]);
     const [oneRandomMeditation, setOneRandomMeditation] = useState([]);
     const [recommendedYogas, setRecommendedYogas] = useState([]);

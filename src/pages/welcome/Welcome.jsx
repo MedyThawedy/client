@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import imagewelcome from '../../components/assets/img/ImageWelcome.png'
 import './welcome.css'
 import { useNavigate } from 'react-router-dom'
+import AppContext from '../../AppContext';
+import { useContext } from 'react';
 
 const Welcome = () => {
     const nav = useNavigate()
@@ -12,6 +14,9 @@ const Welcome = () => {
     const navToReminder = () => {
         nav('/reminder')
     }
+
+    const context = useContext(AppContext);
+    context.setShowNav(false);
 
     return (
 

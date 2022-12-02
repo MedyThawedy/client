@@ -41,3 +41,10 @@
     height: 59px;
     width: 60px;
 }*/
+
+@media only screen and (min-width: 912px) {
+    .clsFooterParent {
+    grid-template-columns: repeat(5, 80px);
+    justify-content: center;
+    }
+}

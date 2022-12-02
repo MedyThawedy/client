@@ -4,6 +4,8 @@ import './reminder.css'
 import Header from '../header/Header'
 import MyTimePicker from './MyTimePicker';
 import { Link } from 'react-router-dom';
+import AppContext from '../../AppContext';
+import { useContext } from 'react';
 
 
 const Reminder = () => {
@@ -11,6 +13,8 @@ const Reminder = () => {
     const [value, setValue] = useState('09:00 AM');
     const [responseMsg, setResponseMsg] = useState('');
     const [reminderDay, setReminderDay] = useState('');
+    const context = useContext(AppContext);
+    context.setShowNav(false);
 
     const onChange = (timeValue) => {
         setValue(timeValue);

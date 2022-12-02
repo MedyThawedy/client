@@ -5,9 +5,13 @@ import searchicon from '../assets/img/searchicon.png'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './yoga.css'
+import AppContext from '../../AppContext'
+import { useContext } from 'react'
+
 
 const Yoga = () => {
-
+    const context = useContext(AppContext);
+    context.setShowNav(true);
 
     const [yogas, setYogas] = useState([]);
     const [strSearchTitle, setStrSearchTitle] = useState(null);
@@ -71,7 +75,7 @@ const Yoga = () => {
     return (
         <structure className="clsCtructurYoga">
             <div> {/**/}</div>
-            <div>
+            <div className="clsCtructurYogaDivContent">
                 <Header />
                 <h2 className='clsGoodVibes'>Yoga</h2>
                 <p className='clsPlaylistGoodVibes3'>Audio-only yoga techniques to help you minimize your screen time and practice on the go.</p>

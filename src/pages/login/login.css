@@ -13,10 +13,10 @@
 }
 
 .clsHeroSectionBuildLoginImg {
-    width: 100vw;
+    width: 100%;
     position: relative;
     max-height: 58vh;
-    object-fit: cover;
+   /* object-fit: cover; */
 }
 
 .clsParaLoginPage {

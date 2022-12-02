@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import './signin.css'
 import { useNavigate } from 'react-router-dom'
+import AppContext from '../../AppContext';
+import { useContext } from 'react';
 
 const Signin = () => {
 
@@ -11,6 +13,8 @@ const Signin = () => {
     const [password, setPassword] = useState('')
     const [errorMessage, setErrorMessage] = useState('');
     const nav = useNavigate()
+    const context = useContext(AppContext);
+    context.setShowNav(false);
 
     const login = async () => {
 
@@ -31,7 +35,8 @@ const Signin = () => {
             //  localStorage.setItem('userID', 'value');
             //  const USER_ID = localStorage.getItem('userID');
             console.log('Under Token ', data)
-            nav('/reminder')
+           
+            nav('/welcome')
         } else {
             const response = await result.json()
             setErrorMessage(response.message)
@@ -48,7 +53,7 @@ const Signin = () => {
 
         <article className='clsArticleSignin' >
             <div>
-                <h2 className='clsHeaderSigninPage'>Welcome Back!</h2>
+                <h2 className='clsHeaderSigninPage'>Welcome Back! </h2>
             </div>
             <input onChange={(e) => { setEmail(e.target.value) }} type="email" className='clsInputSignUp' placeholder='EMAIL' id="idArticleSigninInput" />
             <input onChange={(e) => { setPassword(e.target.value) }} className='clsPasswordSignUp' type="password" placeholder='PASSWORD' />

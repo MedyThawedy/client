@@ -58,7 +58,7 @@
 .clsAdminNavigation {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
 
     margin-bottom: 3vh;

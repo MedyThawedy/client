@@ -5,6 +5,8 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './home.css'
 import searchicon from '../../components/assets/img/searchicon.png'
+import AppContext from '../../AppContext';
+import { useContext } from 'react';
 
 
 const Home = () => {
@@ -18,6 +20,8 @@ const Home = () => {
     const [strRecommended, setStrRecommended] = useState([])
     const user_name = localStorage.getItem('user_name');
     const username = user_name
+    const context = useContext(AppContext);
+    context.setShowNav(true);
 
     // Api Number 4
     useEffect(

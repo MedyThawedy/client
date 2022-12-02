@@ -113,9 +113,22 @@ article.searchArticleMeditate>div.clsSearchField>input[type=text]:focus {
     outline: none;
 }
 
+.clsMeditationItemsImage:hover{
+    border: 3px solid #e28f83;
+}
+
 @media screen and (max-width: 600px) {
     .clsIframMeditateSong {
 
         width: 87%;
+    }
+}
+
+@media only screen and (min-width: 912px) {
+    .clsCtructurMeditateDivContent{
+    max-width: 390px;
+    }
+    .clsMeditationItemsImage{
+      width: 100%;  
     }
 }
