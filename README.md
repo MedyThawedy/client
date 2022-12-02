@@ -27,13 +27,13 @@ here: [SilentMoon](https://silent-moon-client.herokuapp.com/) – Go to Silent M
 ## Screenshots of the app
 
 <div align="center">
-    <img src="./screenshots/login.jpg" width="220" />
-     <img src="./screenshots/welcome.jpg" width="220" />
-    <img src="./screenshots/Reminders.jpg" width="220" />
-    <img src="./screenshots/home.jpg" width="220" />
-    <img src="./screenshots/Yoga Details.jpg" width="220" />
+    <img src="./screenshots/login.png" width="220" />
+     <img src="./screenshots/welcome.png" width="220" />
+    <img src="./screenshots/Reminders.png" width="220" />
+    <img src="./screenshots/home.png" width="220" />
+    <img src="./screenshots/Yoga Details.png" width="220" />
     <img src="./screenshots/Meditate.jpg" width="220" />
-    <img src="./screenshots/Profile.jpg" width="220" />
+    <img src="./screenshots/Profile.png" width="220" />
 </div>
 
 
