@@ -20,7 +20,7 @@ The technologies used for the creation of this app are:
 
 ## Link to the Mobile App
 
-here: [SilentMoon](https://silent-moon-client.herokuapp.com/) – Go to Silent Moon!
+Here: [SilentMoon](https://silent-moon-client.herokuapp.com/) – Go to Silent Moon!
 
 
 ## Screenshots of the app
