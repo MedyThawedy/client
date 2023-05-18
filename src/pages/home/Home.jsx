@@ -102,7 +102,7 @@ const Home = () => {
 
 
     return (
-        <structure>
+        <structure className='clsHome'>
             <Header />
 
             <div className='clsGreentingAndWishesHome'>

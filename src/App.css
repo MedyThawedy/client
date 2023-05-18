@@ -8,6 +8,18 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.clsArticleLogin, .clsArticleSignin, .clsSectionReminder, .clsArticleWelcome
+{
+  background-image: url('./components/assets/img/phone_035.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.clsArticleLogin, .clsArticleSignin, .clsSectionReminder, .clsArticleWelcome{
+  padding: 55px;
+}
+
 .clsErrorMsg {
   color: red;
   text-align: center;
@@ -45,4 +57,15 @@
   color: #61dafb;
 }
 
+@media only screen and (min-width: 912px) {
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .clsArticleLogin, .clsArticleSignin, .clsSectionReminder, .clsArticleWelcome{
+    background-image: none; 
+    padding: 0px;
+  }
+}
 

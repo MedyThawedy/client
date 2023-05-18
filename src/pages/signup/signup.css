@@ -100,6 +100,7 @@ input[type="file"] {
     color: #A1A4B2;
     margin-top: 3vh;
     text-align: center;
+    padding: 4px;
 }
 
 .clsAnchorSigninPage {
