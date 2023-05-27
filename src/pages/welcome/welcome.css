@@ -75,9 +75,15 @@
 
 .clsWelcomeGreeting {
     color: #ffff;
-    left: 5%;
+    /*left: 5%;*/
     position: absolute;
     top: 15%;
-    width: 40%;
-    font-size: 1.6rem;
+    width: 27%;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
 }

@@ -39,6 +39,14 @@
 
 .react-ios-time-picker-container {
     width: 95vw;
+    max-width: 270px;
+}
+
+.react-ios-time-picker-popup {
+
+    max-width: 333px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .react-ios-time-picker-input {
@@ -92,18 +100,18 @@
 
 .clsReminderQuestion {
     margin-top: 3.2vh;
-    width: 62vw;
+   /* width: 62vw; */
 }
 
 .clsWhatTheyRecommend {
     margin-top: 3vh;
-    width: 68vw;
+   /* width: 68vw; */
 }
 
 .clsReminderQuestion2 {
     margin-top: 2.5vh;
     color: #4a503d;
-    width: 62vw;
+   /* width: 62vw; */
 }
 
 
@@ -115,7 +123,7 @@
 .clsWhatTheyRecommend2 {
     margin-top: 3vh;
     color: #A1A4B2;
-    width: 68vw;
+  /*  width: 68vw; */
 }
 
 
@@ -239,6 +247,7 @@
     }
 
     .reminderDays{
-        width:404px;
+       /* width:404px; */
+       width: 100%;
     }
 }
